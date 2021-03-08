@@ -4,10 +4,11 @@
 int main() { 
     while(true) {
         if (KBHIT()) {
-            std::cout << (char)GETCH() << std::endl;
+            GETCHE();
+            GETCH();
             break;
         }
         std::cout << "infinito" << std::endl;
-        SLEEP(1000);
+        SLEEP(500);
     }
 }
